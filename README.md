@@ -7,6 +7,11 @@
 ## Requirements
 - Jdk 1.8 or above
 
+## Game rules
+- This is a mltiplayer dice game and player wins the game after achieving user defined target points
+- The player will get extra chance to roll the dice if the players gets 6 in any turn
+- The player wil be penalised with a chance if they get two consective ones
+
 
 ## How to run
 
@@ -23,4 +28,3 @@ java DiceGame.class arg1 arg2
 
 - arg1 is number of players
 - arg2 is points required to win the game
-
