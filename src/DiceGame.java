@@ -89,10 +89,10 @@ public class DiceGame {
          * 7. If any player achieved max points in step 6. Then remove the players from further round and assign a rank to the player
          * 8. If the players in any round is 1. Then terminate the game and assign the last player last rank
          */
-        while(playersOrder.size() > 0) {
+        while(playersOrder.size() > 1) {
         	int remPlayers = playersOrder.size();
-        	
-        	for(int i=0 ;i<remPlayers; i++) {
+
+        	for(int i=0 ;i<remPlayers && playersOrder.size() > 1; i++) {
         		currPlayer = playersOrder.get(i);
         		if(lastTurn[currPlayer] != -1) {
         			
@@ -133,6 +133,7 @@ public class DiceGame {
         			players[currPlayer].addPoints(pointsInCurrTurn);
         			
         			if(players[currPlayer].getPoints() >= M) {
+						System.out.println("Congratulations Player "+currPlayer+". You won the game with Rank: "+(lastRank+1));
         				playersOrder.remove(i);
         				i--;
         				remPlayers--;
