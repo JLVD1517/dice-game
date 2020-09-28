@@ -28,3 +28,15 @@ java DiceGame.class arg1 arg2
 
 - arg1 is number of players
 - arg2 is points required to win the game
+
+
+## Test Cases
+- Invalid test cases
+1. java DiceGame.class
+2. java DiceGame.class 0 0
+3. java DiceGame.class 2 0
+4. java DiceGame.class 0 3
+
+- Valid test cases
+1. java DiceGame.class 2 3
+2. java DiceGame.class 30 2000
