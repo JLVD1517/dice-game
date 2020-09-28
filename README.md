@@ -1,4 +1,4 @@
-# dice-game
+# The Game of Dice
  
  
  A game of dice for N players and M target points
